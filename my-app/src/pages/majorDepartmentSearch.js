@@ -5,7 +5,7 @@ function MajorDepartment() {
     return (
     <div>
     <h1>major department page
-    </h1> cse
+    </h1> 
     </div>
     );
   };

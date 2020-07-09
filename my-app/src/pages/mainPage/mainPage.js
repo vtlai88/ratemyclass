@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'; 
+import { withRouter } from 'react-router-dom';
+
+import './mainPage.css';
 
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 import * as firebase from "firebase/app";
@@ -46,20 +48,24 @@ class Home extends Component {
   submitForm (e) {
     alert(this.state.college)
     e.preventDefault()
-    this.props.history.push('/majorDepartment'); 
+    this.props.history.push('/majorDepartment');
   }
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.submitForm.bind(this)}>
-          <label>
-            Enter Your College:
-            <input type="text" value={this.state.college} onChange={this.handleChange} />
-          </label>
-          <button type="submit">Submit</button>
+      <div class="search-bar">
+        <form>
+          <div class="form-row">
+            <div class="col-4">
+              <input class="form-control" type="text" placeholder="Enter a University or College..." value={this.state.college} onChange={this.handleChange} />
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </div>
+          </div>
         </form>
       </div>
+
     );
   }
 }

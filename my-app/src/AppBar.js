@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -98,10 +100,10 @@ export default function ButtonAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <Button color="inherit" component={Link} to={'/Home'} > Home </Button>
-          <Button color="inherit" component={Link} to={'/Login'} >Login</Button>
-          <Button color="inherit" component={Link} to={'/signIn'} > Sign In </Button>
-          
+          <Button color="inherit" component={Link} to={'/Home'} >Home</Button>
+          <Button color="inherit" component={Link} to={'/Login'} >Log in</Button>
+          <Button color="inherit" component={Link} to={'/signIn'} >Sign Up</Button>
+          <Button color="inherit" component={Link} to={'/classPage'} >Class Page</Button>
         </Toolbar>
       </AppBar>
     </div>

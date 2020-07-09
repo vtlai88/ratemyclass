@@ -1,0 +1,30 @@
+/* School Summary */
+
+#school-summary {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+/* Course Summary */
+
+#course-summary {
+  padding-top: 3%;
+}
+
+.course-summary-label {
+  padding-top: 2%;
+}
+
+.course-description {
+  padding-top: 1%;
+}
+
+/* Tags Section */
+
+#tags {
+  padding-top: 3%;
+}
+
+.popular-tags {
+  padding-top: 2%;
+}

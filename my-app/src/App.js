@@ -14,7 +14,7 @@ import NotFoundPage from './pages/404';
 import MajorDepartment from './pages/majorDepartmentSearch';
 import Login from './pages/login';
 import SignIn from './pages/signIn';
-
+import Review from './pages/review';
 
 export default function App() {
   return (
@@ -27,6 +27,7 @@ export default function App() {
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signIn" component={SignIn}/>
           <Route exact path="/majorDepartment" component={MajorDepartment}/>
+          <Route exact path="/review" component={Review}/>
           <Route path="/404" component={NotFoundPage}/>
           <Redirect to="/404" />
         </Switch>

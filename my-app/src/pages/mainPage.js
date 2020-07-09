@@ -1,3 +1,54 @@
+const search = document.getElementById('search');
+const matchList = document.getElementById('match-list');
+
+const searchingColleges = async searchText => {
+  const res = await fetch('../data/searchColleges.json');
+  const colleges = await res.json();
+
+  let matches = colleges.filter(collge => {
+    const regex = new RegExp(`^${searchText}`, 'gi');
+    return college.name.match(regex) || college.abbr.match(regex);
+  
+    });
+
+    if(searchText.length === 0){
+      matches = [];
+      matchList.innerHTML = '';
+    }
+
+    outputHtml(matches);
+  };
+
+    const outputHtml = matches =>{
+      if(matches.length > 0){
+          const html = matches.map(match => `
+          <div class="card card-body mb-1">
+          <h4>${match.name} (${match.abbr}) <span class>= "text-primary">${match.location}$</span></h4>
+          </div>
+        `
+         )
+        
+         .join('');
+
+        matchList.innerHTML = html;
+       
+      }
+    };
+
+
+search.addEvenrListener('input', () => searchColleges(search.value))
+
+;
+
+
+
+
+
+
+
+
+
+
 
 
 import React, { Component } from 'react';

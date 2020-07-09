@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -64,14 +66,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-
-
   logo: {
     flexGrow: 1,
     margin: "auto",
     textAlign: "center",
-    width: 100
-    // height: 100
+    width: 200,
+     height: 50
   },
 
 }));
@@ -81,7 +81,7 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ background: '#109da4' }}>
         <Toolbar>
           {/* <img src={logo} alt="logo" className={classes.logo}/> */}
           <Button component={Link} to={'/'} > 
@@ -94,9 +94,9 @@ export default function ButtonAppBar() {
             <img src={logo} alt="logo" className={classes.logo} />
           </IconButton> */}
 
-
+          
           <Typography variant="h6" className={classes.title}>
-            RateMyClass
+            {/* Dont know how to format button t=on left so left this empty */}
           </Typography>
 
 
@@ -113,10 +113,10 @@ export default function ButtonAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          
-          <Button color="inherit" component={Link} to={'/Login'} >Login</Button>
-          <Button color="inherit" component={Link} to={'/signIn'} > Sign In </Button>
-          
+            {/* Buttons for when we decide to implement users*/}
+          {/* <Button color="inherit" component={Link} to={'/Login'} >Log in</Button>
+          <Button color="inherit" component={Link} to={'/signIn'} >Sign Up</Button>
+          <Button color="inherit" component={Link} to={'/classPage'} >Class Page</Button> */}
         </Toolbar>
       </AppBar>
     </div>

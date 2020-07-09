@@ -1,8 +1,4 @@
-const search = document.getElementById('search');
-const matchList = document.getElementById('match-list');
 
-search.addEventListener('input', ()=> searchColleges
-    (search.value));
 
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'; 

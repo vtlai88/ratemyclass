@@ -10,7 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 
-import logo from './Logos/logo.png';
+import logo from './Logos/logoTitle.png';
 //searchbar
 import InputBase from '@material-ui/core/InputBase';
 import { fade } from '@material-ui/core/styles';
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   title: {
     flexGrow: 1,
@@ -65,12 +65,15 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+
   logo: {
+    flexGrow: 1,
     margin: "auto",
     textAlign: "center",
-    maxWidth: "5%",
-    maxHeight: "10%"
+    width: 200,
+     height: 50
   },
+
 }));
 
 export default function ButtonAppBar() {
@@ -78,15 +81,25 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ background: '#109da4' }}>
         <Toolbar>
-          <img src={logo} alt="logo" className={classes.logo}/>
-          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
+          {/* <img src={logo} alt="logo" className={classes.logo}/> */}
+          <Button component={Link} to={'/'} > 
+          <img src={logo} alt="logo" className={classes.logo} /></Button>
+ 
+          
+    
+
+          {/* <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
+            <img src={logo} alt="logo" className={classes.logo} />
           </IconButton> */}
+
+          
           <Typography variant="h6" className={classes.title}>
-            RateMyClass
+            {/* Dont know how to format button t=on left so left this empty */}
           </Typography>
+
+
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -100,10 +113,10 @@ export default function ButtonAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <Button color="inherit" component={Link} to={'/Home'} >Home</Button>
-          <Button color="inherit" component={Link} to={'/Login'} >Log in</Button>
+            {/* Buttons for when we decide to implement users*/}
+          {/* <Button color="inherit" component={Link} to={'/Login'} >Log in</Button>
           <Button color="inherit" component={Link} to={'/signIn'} >Sign Up</Button>
-          <Button color="inherit" component={Link} to={'/classPage'} >Class Page</Button>
+          <Button color="inherit" component={Link} to={'/classPage'} >Class Page</Button> */}
         </Toolbar>
       </AppBar>
     </div>

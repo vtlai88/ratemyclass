@@ -105,7 +105,7 @@ export default function ButtonAppBar() {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Enter a University..."
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

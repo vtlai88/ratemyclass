@@ -10,46 +10,49 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      college: '',
+      value: '',
     };
-
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
     }
-
 
   state = {
     selected: [],
   };
 
-  handleChange(event) {
-    this.setState({college: event.target.value});
-  }
+  // handleChange(event) {
+  //   this.setState({value: event.target.value});
+  // }
 
+  // submitForm (e) {
+  //   alert(this.state.college)
+  //   e.preventDefault()
+  //   this.props.history.push('/majorDepartment');
+  // }
 
   submitForm (e) {
-    alert(this.state.college)
     e.preventDefault()
-    this.props.history.push('/majorDepartment');
+    this.props.history.push('/classPage'); // <--- The page you want to redirect your user to.
   }
 
   render() {
     return (
       <div class="search-bar">
-        <form>
+        <form onSubmit={this.submitForm.bind(this)}>
           <div class="form-row">
             <div class="col-4">
               <Typeahead
                 {...this.state}
                 class="form-control"
                 type="text"
-                onChange={this.handleChange}
-                value={this.state.college}
+                // onChange={this.handleChange}
+                value={this.state.value}
                 options={options}
                 placeholder="Enter a University or College..."
               />
             </div>
+
             <div class="col-1">
-               <button type="submit" class="btn btn-primary mb-2">Search</button>
+              <button type="submit" class="btn btn-primary mb-2">Search</button>              
             </div>
           </div>
         </form>

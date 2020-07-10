@@ -1,8 +1,23 @@
+/* Container */
+
+.container-fluid {
+  padding: 1% 10%;
+}
+
 /* School Summary */
 
 #school-summary {
   padding-top: 2%;
   padding-bottom: 3%;
+}
+
+.school-info {
+  padding: 0;
+  margin: auto;
+}
+
+.college-logo {
+  padding: 15%;
 }
 
 /* Course Summary */
@@ -19,6 +34,10 @@
   padding-top: 1%;
 }
 
+.empty-heart {
+  font-size: 2rem;
+}
+
 /* Tags Section */
 
 #tags {
@@ -26,5 +45,41 @@
 }
 
 .popular-tags {
-  padding-top: 2%;
+  padding-top: 1%;
+  display: inline-block;
+}
+
+/* Scores Section */
+
+#scores {
+  padding-top: 3%;
+}
+
+/* Quick Info Section */
+
+#quick-info {
+  padding: 3% 10% 3% 10%;
+  margin: 3% 0;
+  background-color: #fbe6d4;
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* Review Section */
+
+.review-labels {
+  padding-bottom: 1%;
+}
+
+.load-more-button {
+  margin: 3% 0;
+  text-align: center;
+}
+
+/* Class Actions */
+
+#class-actions {
+  padding-bottom: 5%;
+  text-align: center;
+  margin: auto;
 }

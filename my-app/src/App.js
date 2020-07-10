@@ -15,6 +15,8 @@ import MajorDepartment from './pages/majorDepartmentSearch';
 import Login from './pages/login';
 import SignIn from './pages/signIn';
 import classPage from './pages/classPage/classPage';
+import Review from "./pages/review";
+
 
 
 export default function App() {
@@ -22,13 +24,14 @@ export default function App() {
     <Router>
       <div>
         <AppBar/>
-    
+
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signIn" component={SignIn}/>
           <Route exact path="/majorDepartment" component={MajorDepartment}/>
           <Route exact path="/classPage" component={classPage}/>
+          <Route exact path="/review" component={Review}/>
           <Route path="/404" component={NotFoundPage}/>
           <Redirect to="/404" />
         </Switch>

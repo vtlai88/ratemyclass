@@ -5,7 +5,7 @@ const searchingColleges = async searchText => {
   const res = await fetch('../data/searchColleges.json');
   const colleges = await res.json();
 
-  let matches = colleges.filter(collge => {
+  let matches = colleges.filter(college => {
     const regex = new RegExp(`^${searchText}`, 'gi');
     return college.name.match(regex) || college.abbr.match(regex);
   
@@ -36,19 +36,9 @@ const searchingColleges = async searchText => {
     };
 
 
-search.addEvenrListener('input', () => searchColleges(search.value))
+search.addEvenrListener('input', () => searchingColleges(search.value))
 
 ;
-
-
-
-
-
-
-
-
-
-
 
 
 import React, { Component } from 'react';
@@ -107,7 +97,11 @@ class Home extends Component {
         <form onSubmit={this.submitForm.bind(this)}>
           <label>
             Enter Your College:
-            <input type="text" value={this.state.college} onChange={this.handleChange} />
+            <input 
+            type="text" 
+            id= "search" 
+            class="form-control form-control-lg"
+            />
           </label>
           <button type="submit">Submit</button>
         </form>

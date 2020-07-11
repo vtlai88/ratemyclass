@@ -7,7 +7,7 @@ class School_Box extends React.Component {
     super(props);
 
     this.state = {
-      name: 'University of California Merced',
+      name: 'University of California, Merced',
       department: 'Computer Science and Engineering',
       logo_src: 'https://caltrout-46mile-v1594212294.websitepro-cdn.com/wp-content/uploads/2019/08/UC-merced-logo.script.svg.png'
     };

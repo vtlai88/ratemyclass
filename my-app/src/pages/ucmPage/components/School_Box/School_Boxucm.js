@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './School_Box.css';
+import './School_Boxucm.css';
 
-class School_Box extends React.Component {
+class School_Boxucm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -24,7 +24,7 @@ class School_Box extends React.Component {
             <div class="row no-gutters">
 
               <div class="col">
-                <img src={this.state.logo_src} class="card-img college-logo" alt={this.state.name}></img>
+                <img src={this.state.logo_src2} class="card-img college-logo" alt={this.state.name2}></img>
               </div>
 
               <div class="col-lg-10 school-info">
@@ -44,4 +44,4 @@ class School_Box extends React.Component {
   }
 }
 
-export default School_Box;
+export default School_Boxucm;

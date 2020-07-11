@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Course_Summary.css';
+import './Course_Summaryucm.css';
 
 class Course_Summary extends React.Component {
   constructor(props) {

@@ -1,0 +1,21 @@
+/* Course Summary */
+
+#school-summary {
+  padding-top: 3%;
+}
+
+.school-summary-label {
+  padding-top: 2%;
+}
+
+.school-description {
+  padding-top: 1%;
+}
+.school-photo{
+    height: 100x;
+    width: 1440px;
+}
+
+.empty-heart {
+  font-size: 2rem;
+}

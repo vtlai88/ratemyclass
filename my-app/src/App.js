@@ -15,6 +15,7 @@ import MajorDepartment from './pages/majorDepartmentSearch';
 import Login from './pages/login';
 import SignIn from './pages/signIn';
 import classPage from './pages/classPage/classPage';
+import school from './pages/school/school'
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route exact path="/majorDepartment" component={MajorDepartment}/>
           <Route exact path="/classPage" component={classPage}/>
           <Route path="/404" component={NotFoundPage}/>
+          <Route path="/school" component={school}/>
           <Redirect to="/404" />
         </Switch>
       </div>

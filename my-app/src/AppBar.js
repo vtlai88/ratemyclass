@@ -16,6 +16,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -81,7 +82,7 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ background: '#109da4' }}>
+      <AppBar position="static"  style={{ background: '#109da4' }} >
         <Toolbar>
           {/* <img src={logo} alt="logo" className={classes.logo}/> */}
           <Button component={Link} to={'/'} > 
@@ -99,6 +100,16 @@ export default function ButtonAppBar() {
             {/* Dont know how to format button t=on left so left this empty */}
           </Typography>
 
+          {/* <Toolbar>
+            <input
+              placeholder="type here"
+              style={{
+                height: 20,
+                marginTop: 15
+              }}
+            />
+          </Toolbar> */}
+
 
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -113,6 +124,7 @@ export default function ButtonAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
+
             {/* Buttons for when we decide to implement users*/}
           {/* <Button color="inherit" component={Link} to={'/Login'} >Log in</Button>
           <Button color="inherit" component={Link} to={'/signIn'} >Sign Up</Button>

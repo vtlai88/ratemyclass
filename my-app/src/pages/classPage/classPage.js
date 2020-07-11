@@ -11,7 +11,7 @@ function classPage() {
         {/* School Summary Section */}
         <section id="school-summary">
 
-          <div class="card shadow-sm bg-white rounded school-summary-card">
+          <div class="card shadow-sm bg-white rounded school-summary-card" >
             <div class="row no-gutters">
 
               <div class="col">

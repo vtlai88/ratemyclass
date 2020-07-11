@@ -52,7 +52,7 @@ class Home extends Component {
             </div>
 
             <div class="col-1">
-              <button type="submit" class="btn btn-primary mb-2">Search</button>              
+              <button type="submit" class="btn btn-primary mb-2">Search</button>
             </div>
           </div>
         </form>
@@ -63,8 +63,3 @@ class Home extends Component {
 
 ReactDOM.render(<Home />, document.getElementById('root'));
 export default withRouter(Home);
-
-
-
-
-

@@ -2,8 +2,8 @@ import React from "react";
 
 import './classPage.css';
 
-import School_Box from './components/School_Box/School_Box';
-import Course_Summary from './components/Course_Summary/Course_Summary';
+import School_Box from './components/School_Box/School_Boxucm';
+import Course_Summary from './components/Course_Summaryucm/Course_Summary';
 
 function classPage() {
   return (

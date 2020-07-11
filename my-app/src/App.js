@@ -14,6 +14,7 @@ import NotFoundPage from './pages/404';
 import Login from './pages/login';
 import SignIn from './pages/signIn';
 import classPage from './pages/classPage/classPage';
+import ucmPage from './pages/ucmPage/ucmPage'; 
 import Review from "./pages/review";
 
 

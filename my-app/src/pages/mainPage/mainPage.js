@@ -31,7 +31,8 @@ class Home extends Component {
 
   submitForm (e) {
     e.preventDefault()
-    this.props.history.push('/classPage'); // <--- The page you want to redirect your user to.
+    this.props.history.push('/classPage');
+    this.props.history.push('/ucmPage'); // <--- The page you want to redirect your user to.
   }
 
   render() {

@@ -1,59 +1,43 @@
-
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-
+import { Typeahead } from 'react-bootstrap-typeahead';
+import ReactDOM from 'react-dom';
+import options from './data';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 import './mainPage.css';
-
-// Firebase App (the core Firebase SDK) is always required and must be listed first
-import * as firebase from "firebase/app";
-
-// If you enabled Analytics in your project, add the Firebase SDK for Analytics
-import "firebase/analytics";
-
-// Add the Firebase products that you want to use
-import "firebase/auth";
-import "firebase/firestore";
-
-
-//initialize Firebase
-var config = {
-    apiKey: "AIzaSyBQb8OlgYaZRg6MYlC2sk8EoJf-FsMdDsE",
-    authDomain: "ratemyclass-4a6a1.firebaseapp.com",
-    databaseURL: "https://ratemyclass-4a6a1.firebaseio.com",
-    projectId: "ratemyclass-4a6a1",
-    storageBucket: "ratemyclass-4a6a1.appspot.com",
-    messagingSenderId: "1008600140252",
-    appId: "1:1008600140252:web:dc325b249cf0adee372719",
-    measurementId: "G-6TG02EZN30"
-  };
-firebase.initializeApp(config);
-
 
 class Home extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-          college: '',
-      };
+      value: '',
+    };
+    // this.handleChange = this.handleChange.bind(this);
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-  }
+  state = {
+    selected: [],
+  };
 
-  handleChange(event) {
-    this.setState({college: event.target.value});
-  }
+  // handleChange(event) {
+  //   this.setState({value: event.target.value});
+  // }
 
+  // submitForm (e) {
+  //   alert(this.state.college)
+  //   e.preventDefault()
+  //   this.props.history.push('/majorDepartment');
+  // }
 
   submitForm (e) {
-    alert(this.state.college)
     e.preventDefault()
-    this.props.history.push('/majorDepartment');
+    this.props.history.push('/classPage'); // <--- The page you want to redirect your user to.
   }
 
   render() {
     return (
       <div class="search-bar">
+<<<<<<< HEAD
       <form>
         <div class="form-row">
           <div class="col-4">
@@ -65,8 +49,31 @@ class Home extends Component {
         </div>
       </form>
     </div>
+=======
+        <form onSubmit={this.submitForm.bind(this)}>
+          <div class="form-row">
+            <div class="col-4">
+              <Typeahead
+                {...this.state}
+                class="form-control"
+                type="text"
+                // onChange={this.handleChange}
+                value={this.state.value}
+                options={options}
+                placeholder="Enter a University or College..."
+              />
+            </div>
+
+            <div class="col-1">
+              <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+>>>>>>> 2a8f0e89da62d93c46b9bb916a47b4ce5268f084
     );
   }
 }
 
+ReactDOM.render(<Home />, document.getElementById('root'));
 export default withRouter(Home);

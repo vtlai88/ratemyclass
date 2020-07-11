@@ -1,0 +1,43 @@
+/* Course Summary */
+
+#course-summary {
+  margin-top: 4.75rem;
+}
+
+.department-code {
+  font-weight: 600;
+  line-height: 35px;
+
+  color: #848484;
+}
+
+.full-course-name {
+  font-weight: 600;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.course-summary-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+
+  color: #454545;
+}
+
+.course-description {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 33px;
+
+  color: #454545;
+}
+
+.empty-heart {
+  font-size: 2rem;
+}

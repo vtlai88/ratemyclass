@@ -4,49 +4,32 @@
   padding: 1% 10%;
 }
 
-/* School Summary */
-
-#school-summary {
-  padding-top: 2%;
-  padding-bottom: 3%;
-}
-
-.school-info {
-  padding: 0;
-  margin: auto;
-}
-
-.college-logo {
-  padding: 15%;
-}
-
-/* Course Summary */
-
-#course-summary {
-  padding-top: 3%;
-}
-
-.course-summary-label {
-  padding-top: 2%;
-}
-
-.course-description {
-  padding-top: 1%;
-}
-
-.empty-heart {
-  font-size: 2rem;
-}
-
 /* Tags Section */
 
-#tags {
-  padding-top: 3%;
+.popular-tags-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  color: #454545;
 }
 
-.popular-tags {
+.badge {
   padding-top: 1%;
   display: inline-block;
+  background-color: rgba(174, 236, 239, 0.5);
+  border-radius: 24.5px;
+}
+
+.tag-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
 }
 
 /* Scores Section */
@@ -60,20 +43,76 @@
 #quick-info {
   padding: 3% 10% 3% 10%;
   margin: 3% 0;
-  background-color: #fbe6d4;
+  background-color: #FFF8F3;
   width: 100%;
-  line-height: 1.5;
+}
+
+.quick-info-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  color: #5C5C5C;
+}
+
+.quick-info-answer {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  color: #262626;
 }
 
 /* Review Section */
 
-.review-labels {
-  padding-bottom: 1%;
+.review-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  color: #454545;
 }
 
-.load-more-button {
-  margin: 3% 0;
+.filer-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #656565;
+}
+
+.sorted-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #454545;
+}
+
+.load-review-button {
+  margin-top: 1.6875rem;
+  margin-bottom: 4.375rem;
+
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
   text-align: center;
+
+  color: #454545;
+}
+
+.load-review-label {
+  margin: auto;
 }
 
 /* Class Actions */
@@ -82,4 +121,26 @@
   padding-bottom: 5%;
   text-align: center;
   margin: auto;
+}
+
+.fav-button {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
+}
+
+.review-button {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+
+  color: #119DA4;
 }

@@ -1,0 +1,146 @@
+/* Container */
+
+.container-fluid {
+  padding: 1% 10%;
+}
+
+/* Tags Section */
+
+.popular-tags-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  color: #454545;
+}
+
+.badge {
+  padding-top: 1%;
+  display: inline-block;
+  background-color: rgba(174, 236, 239, 0.5);
+  border-radius: 24.5px;
+}
+
+.tag-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
+}
+
+/* Scores Section */
+
+#scores {
+  padding-top: 3%;
+}
+
+/* Quick Info Section */
+
+#quick-info {
+  padding: 3% 10% 3% 10%;
+  margin: 3% 0;
+  background-color: #FFF8F3;
+  width: 100%;
+}
+
+.quick-info-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  color: #5C5C5C;
+}
+
+.quick-info-answer {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  color: #262626;
+}
+
+/* Review Section */
+
+.review-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  color: #454545;
+}
+
+.filer-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #656565;
+}
+
+.sorted-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #454545;
+}
+
+.load-review-button {
+  margin-top: 1.6875rem;
+  margin-bottom: 4.375rem;
+
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+
+  color: #454545;
+}
+
+.load-review-label {
+  margin: auto;
+}
+
+/* Class Actions */
+
+#class-actions {
+  padding-bottom: 5%;
+  text-align: center;
+  margin: auto;
+}
+
+.fav-button {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
+}
+
+.review-button {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+
+  color: #119DA4;
+}

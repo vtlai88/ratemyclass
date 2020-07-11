@@ -37,19 +37,6 @@ class Home extends Component {
   render() {
     return (
       <div class="search-bar">
-<<<<<<< HEAD
-      <form>
-        <div class="form-row">
-          <div class="col-4">
-            <input class="form-control" type="text" placeholder="Enter a University or College..." value={this.state.college} onChange={this.handleChange} />
-          </div>
-          <div class="col-1">
-            <button type="submit" class="btn btn-primary mb-2">Search</button>
-          </div>
-        </div>
-      </form>
-    </div>
-=======
         <form onSubmit={this.submitForm.bind(this)}>
           <div class="form-row">
             <div class="col-4">
@@ -70,7 +57,6 @@ class Home extends Component {
           </div>
         </form>
       </div>
->>>>>>> 2a8f0e89da62d93c46b9bb916a47b4ce5268f084
     );
   }
 }

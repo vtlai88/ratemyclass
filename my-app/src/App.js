@@ -4,11 +4,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect,
 } from "react-router-dom";
 
-// from Home branch
+
 import Home from './pages/mainPage/mainPage';
 import NotFoundPage from './pages/404';
 import Login from './pages/login';
@@ -23,7 +22,6 @@ export default function App() {
     <Router>
       <div>
         <AppBar/>
-
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>

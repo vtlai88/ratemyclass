@@ -1,0 +1,36 @@
+.dot {
+  width: 9.5rem;
+  height: 9.5rem;
+  background-color: #B4F46E;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.review .overall-score-label {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+
+  color: #262626;
+}
+
+.review .date {
+  position: relative;
+  width: 323px;
+  height: 46px;
+  left: 320px;
+  top: 0;
+
+  font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 165.18%;
+/* or 26px */
+display: flex;
+align-items: center;
+
+color: #454545;
+}

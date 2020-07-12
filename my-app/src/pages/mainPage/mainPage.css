@@ -29,14 +29,14 @@ form{
 }
 
 .form-control{
-  width: 700px; 
+  width: 700px;
   border: 1px solid;
   height: 55px;
 }
 
 /* button */
 .btn.btn-primary.mb-2 {
-  background-color:#139da4; 
+  background-color:#139da4;
   border: none;
   color: white;
   padding: 15px 32px;

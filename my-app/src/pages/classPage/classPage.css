@@ -6,28 +6,30 @@
 
 /* Tags Section */
 
+#tags {
+  padding: 2% 0 2%;
+}
+
 .popular-tags-label {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
 
+  margin-bottom: 1.25rem;
+
   color: #454545;
 }
 
 .badge {
-  padding-top: 1%;
-  display: inline-block;
   background-color: rgba(174, 236, 239, 0.5);
-  border-radius: 24.5px;
+  border-radius: 1.5625rem;
 }
 
 .tag-label {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 600;
-  display: flex;
-  align-items: center;
 
   color: #262626;
 }
@@ -71,30 +73,13 @@
   font-weight: 600;
   line-height: 40px;
 
+  margin-bottom: 1.6875rem;
+
   color: #454545;
 }
 
-.filer-label {
-  font-family: 'Muli', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-
-  color: #656565;
-}
-
-.sorted-label {
-  font-family: 'Muli', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-
-  color: #454545;
+.review {
+  background: #F8F8F8;
 }
 
 .load-review-button {
@@ -108,6 +93,7 @@
   align-items: center;
   text-align: center;
 
+  background-color: #F8F8F8;
   color: #454545;
 }
 

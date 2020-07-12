@@ -1,11 +1,11 @@
 import React from "react";
 
-import './classPage.css';
+import './classPageucm.css';
 
 import School_Box from './components/School_Box/School_Boxucm';
-import Course_Summary from './components/Course_Summaryucm/Course_Summary';
+import Course_Summary from './components/Course_Summary/Course_Summaryucm';
 
-function classPage() {
+function classPageucm() {
   return (
     <div>
 
@@ -105,4 +105,4 @@ function classPage() {
   );
 };
 
-export default classPage;
+export default classPageucm;

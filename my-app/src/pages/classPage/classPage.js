@@ -12,7 +12,7 @@ class classPage extends React.Component {
     super(props);
 
     this.state = {
-      reviews: [<Review />],
+      reviews: [<Review />, <Review />, <Review />],
     };
   }
   render() {
@@ -30,9 +30,9 @@ class classPage extends React.Component {
 
             <h5 class="popular-tags-label">Popular Tags</h5>
             <div class="row m-0 popular-tags">
-              <h4 class="tag-label"><span class="badge badge-pill mr-2">Would Take Again</span></h4>
-              <h4 class="tag-label"><span class="badge badge-pill mr-2">Lecutre Heavy</span></h4>
-              <h4 class="tag-label"><span class="badge badge-pill mr-2">Attendance Required</span></h4>
+              <button type="button" class="btn btn-light mr-2 tag">Would Take Again</button>
+              <button type="button" class="btn btn-light mr-2 tag">Lecture Heavy</button>
+              <button type="button" class="btn btn-light mr-2 tag">Attendance Required</button>
             </div>
 
           </section>
@@ -92,8 +92,14 @@ class classPage extends React.Component {
           {/* Class Action Section */}
           <section id="class-actions">
 
-            <button type="button" class="btn btn-light btn-lg shadow-sm mr-5 fav-button"><i class="far fa-heart"></i> Add to Favorites</button>
-            <button type="button" class="btn btn-outline-dark btn-lg shadow ml-5 review-button"><i class="fas fa-plus"></i> Review this Class</button>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <button type="button" class="btn btn-light btn-lg btn-block shadow-sm fav-button"><i class="far fa-heart"></i> Add to Favorites</button>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <button type="button" class="btn btn-outline-dark btn-lg btn-block shadow review-button"><i class="fas fa-plus"></i> Review this Class</button>
+              </div>
+            </div>
 
           </section>
 

@@ -84,17 +84,17 @@ export default function ButtonAppBar() {
       <AppBar position="static" style={{ background: '#109da4' }}>
         <Toolbar>
           {/* <img src={logo} alt="logo" className={classes.logo}/> */}
-          <Button component={Link} to={'/'} > 
+          <Button component={Link} to={'/'} >
           <img src={logo} alt="logo" className={classes.logo} /></Button>
- 
-          
-    
+
+
+
 
           {/* <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
             <img src={logo} alt="logo" className={classes.logo} />
           </IconButton> */}
 
-          
+
           <Typography variant="h6" className={classes.title}>
             {/* Dont know how to format button t=on left so left this empty */}
           </Typography>
@@ -105,7 +105,7 @@ export default function ButtonAppBar() {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Search"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

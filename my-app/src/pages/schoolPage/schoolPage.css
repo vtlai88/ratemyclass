@@ -1,4 +1,9 @@
-/* Course Summary */
+.container-fluid {
+    padding: 1% 10%;
+  }
+
+
+/* Scool Summary */
 
 #school-summary {
   padding-top: 3%;
@@ -14,8 +19,4 @@
 .school-photo{
     height: 100x;
     width: 1440px;
-}
-
-.empty-heart {
-  font-size: 2rem;
 }

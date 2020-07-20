@@ -1,0 +1,36 @@
+/* School Summary */
+
+#school-summary {
+  margin-top: 2.1875rem;
+}
+
+.school-info {
+  font-family: 'Muli', sans-serif;
+  margin: auto;
+}
+
+.department-name {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  color: #656565;
+}
+
+.change-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+
+  color: #056B71;
+}
+
+.college-logo {
+  padding: 15%;
+}

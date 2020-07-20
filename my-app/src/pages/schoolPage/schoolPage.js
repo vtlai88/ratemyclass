@@ -1,9 +1,9 @@
 import React from "react";
 
-import './school.css';
+import './schoolPage.css';
 import ucla from '../schoolPhotos/ucla.jpeg';
 
-function school(){
+function schoolPage(){
     return (
         <div>
         {/* School Summary Section */}
@@ -39,4 +39,4 @@ function school(){
 
     );
 }
-export default school;
+export default schoolPage;

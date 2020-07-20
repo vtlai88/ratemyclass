@@ -4,6 +4,10 @@
   margin-top: 2.1875rem;
 }
 
+.school-summary-card {
+  height: 9.375rem;
+}
+
 .school-info {
   font-family: 'Muli', sans-serif;
   margin: auto;

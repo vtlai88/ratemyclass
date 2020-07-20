@@ -39,7 +39,7 @@ class Home extends Component {
     return (
       <div class="wrap">
       <img src={logo} alt="Logo" class="logo-image"/>
-      <h1 class="slogan">Discover the best classes at your college!</h1>
+      <h4 class="slogan">Discover the best classes at your college!</h4>
 
         <div class="search-bar">
           <form>
@@ -60,6 +60,6 @@ class Home extends Component {
     );
   }
 }
-       
+
 ReactDOM.render(<Home />, document.getElementById('root'));
 export default withRouter(Home);

@@ -34,11 +34,12 @@ class School_Box extends React.Component {
                   <a href="#" class="card-link change-link"><small>Change</small></a>
                 </div>
               </div>
+              
             </div>
           </div>
 
         </section>
-        
+
       </div>
     );
   }

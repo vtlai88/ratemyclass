@@ -6,6 +6,7 @@ import School_Box from './components/School_Box/School_Box';
 import Course_Summary from './components/Course_Summary/Course_Summary';
 import Review_List from './components/Review_List/Review_List';
 import Review from './components/Review/Review';
+import { withRouter } from 'react-router-dom';
 
 class classPage extends React.Component {
   constructor(props) {
@@ -14,7 +15,14 @@ class classPage extends React.Component {
     this.state = {
       reviews: [<Review />, <Review />, <Review />],
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.history.push('/classPage/overall');
+  }
+
   render() {
     return (
       <div>
@@ -97,7 +105,7 @@ class classPage extends React.Component {
                 <button type="button" class="btn btn-light btn-lg btn-block shadow-sm fav-button"><i class="far fa-heart"></i> Add to Favorites</button>
               </div>
               <div class="col-lg-6 col-sm-12">
-                <button type="button" class="btn btn-outline-dark btn-lg btn-block shadow review-button"><i class="fas fa-plus"></i> Review this Class</button>
+                <button type="button" onClick={this.handleSubmit} class="btn btn-outline-dark btn-lg btn-block shadow review-button"><i class="fas fa-plus"></i> Review this Class</button>
               </div>
             </div>
 
@@ -112,4 +120,5 @@ class classPage extends React.Component {
 
 };
 
-export default classPage;
+
+export default withRouter(classPage);

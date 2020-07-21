@@ -13,7 +13,12 @@ class classPage extends React.Component {
     super(props);
 
     this.state = {
-      reviews: [<Review />, <Review />, <Review />],
+      reviews: [<Review overallScore='5.0' />, <Review overallScore='4.0' />, <Review overallScore='3.9' />],
+      overallScore: 4.7,
+      difficultyScore: 3.5,
+      usefulnessScore: 3.9,
+      workloadScore: 4.2,
+      interestingScore: 4.3,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -38,9 +43,9 @@ class classPage extends React.Component {
 
             <h5 class="popular-tags-label">Popular Tags</h5>
             <div class="row m-0 popular-tags">
-              <button type="button" class="btn btn-light mr-2 tag">Would Take Again</button>
-              <button type="button" class="btn btn-light mr-2 tag">Lecture Heavy</button>
-              <button type="button" class="btn btn-light mr-2 tag">Attendance Required</button>
+              <button type="button" class="btn btn-light mb-2 mr-2 tag">Would Take Again</button>
+              <button type="button" class="btn btn-light mb-2 mr-2 tag">Lecture Heavy</button>
+              <button type="button" class="btn btn-light mb-2 mr-2 tag">Attendance Required</button>
             </div>
 
           </section>
@@ -48,8 +53,29 @@ class classPage extends React.Component {
           {/* Scores Section */}
           <section id="scores">
 
-            <h5 class="overall-score-label">Overall Score</h5>
-            <h6 class="text-muted"><a href="#" class="text-reset" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">What do these scores mean?</a></h6>
+            <div class="row">
+
+              <div class="col-lg-3 col-sm-12">
+                <div class="circle overall-circle">{this.state.overallScore}</div>
+                <h5 class="overall-score-label">Overall Score</h5>
+                <h6 class="text-muted"><a href="#" class="text-reset" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">What do these scores mean?</a></h6>
+              </div>
+
+              <div class="col-2">
+                <div class="circle score-circle difficulty-circle">{this.state.overallScore}</div>
+                <h6 class="score-label">Difficulty</h6>
+                <div class="circle score-circle workload-circle">{this.state.workloadScore}</div>
+                <h6 class="score-label">Workload</h6>
+              </div>
+
+              <div class="col-2">
+                <div class="circle score-circle usefulness-circle">{this.state.usefulnessScore}</div>
+                <h6 class="score-label">Usefulness</h6>
+                <div class="circle score-circle interesting-circle">{this.state.interestingScore}</div>
+                <h6 class="score-label">Interesting</h6>
+              </div>
+
+            </div>
 
           </section>
 

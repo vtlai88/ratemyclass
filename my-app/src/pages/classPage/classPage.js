@@ -25,7 +25,7 @@ class classPage extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.history.push('/classPage/overall');
+    this.props.history.push('/schoolPage/classPage/overall');
   }
 
   render() {

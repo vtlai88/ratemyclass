@@ -16,12 +16,12 @@ class Overall extends React.Component  {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.history.push('/classPage/overall/difficulty');
+    this.props.history.push('/schoolPage/classPage/overall/difficulty');
   }
 
   handleSubmitCancel(event) {
     event.preventDefault();
-    this.props.history.push('/classPage');
+    this.props.history.push('/schoolPage/classPage');
   }
 
 

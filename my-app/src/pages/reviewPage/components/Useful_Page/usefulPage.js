@@ -17,13 +17,13 @@ class Workload extends React.Component  {
   
     handleSubmit(event) {
       event.preventDefault();
-      this.props.history.push('/classPage/overall/difficulty/workload/useful/review');
+      this.props.history.push('/schoolPage/classPage/overall/difficulty/workload/useful/review');
     }
 
 
     handleSubmitBack(event) {
     event.preventDefault();
-    this.props.history.push('/classPage/overall/difficulty/workload/');
+    this.props.history.push('/schoolPage/classPage/overall/difficulty/workload/');
     }
     
     render() {

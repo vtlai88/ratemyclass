@@ -19,6 +19,7 @@ import Difficulty from "./pages/reviewPage/components/Difficulty_Page/difficulty
 import Workload from "./pages/reviewPage/components/Workload_Page/workloadPage"
 import Useful from "./pages/reviewPage/components/Useful_Page/usefulPage"
 import ReviewPage from "./pages/reviewPage/components/Review_Page/review"
+import schoolPage from "./pages/schoolPage/schoolPage"
 
 
 export default function App() {
@@ -30,15 +31,18 @@ export default function App() {
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/signIn" component={SignIn}/>
-          <Route exact path="/classPage" component={classPage}/>
+
+          <Route exact path="/schoolPage/classPage" component={classPage}/>
          
-          <Route exact path="/classPage/overall" component={Overall}/>
-          <Route exact path="/classPage/overall/difficulty" component={Difficulty}/>
-          <Route exact path="/classPage/overall/difficulty/workload" component={Workload}/>
-          <Route exact path="/classPage/overall/difficulty/workload/useful" component={Useful}/>
-          <Route exact path="/classPage/overall/difficulty/workload/useful/review" component={ReviewPage}/>
+          <Route exact path="/schoolPage/classPage/overall" component={Overall}/>
+          <Route exact path="/schoolPage/classPage/overall/difficulty" component={Difficulty}/>
+          <Route exact path="/schoolPage/classPage/overall/difficulty/workload" component={Workload}/>
+          <Route exact path="/schoolPage/classPage/overall/difficulty/workload/useful" component={Useful}/>
+          <Route exact path="/schoolPage/classPage/overall/difficulty/workload/useful/review" component={ReviewPage}/>
+          
           
           <Route path="/404" component={NotFoundPage}/>
+          <Route path="/schoolPage" component={schoolPage}/>
           <Redirect to="/404" />
         </Switch>
       </div>

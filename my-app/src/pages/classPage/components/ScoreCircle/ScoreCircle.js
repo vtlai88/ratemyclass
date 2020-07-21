@@ -46,5 +46,4 @@ class ScoreCircle extends React.Component {
     );
   }
 }
-
 export default ScoreCircle;

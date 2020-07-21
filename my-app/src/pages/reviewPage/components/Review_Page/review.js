@@ -17,13 +17,13 @@ class Difficulty extends React.Component  {
   
     handleSubmit(event) {
       event.preventDefault();
-      this.props.history.push('/classPage');
+      this.props.history.push('/schoolPage/classPage');
     }
 
 
     handleSubmitBack(event) {
     event.preventDefault();
-    this.props.history.push('/classPage/overall/difficulty/workload');
+    this.props.history.push('/schoolPage/classPage/overall/difficulty/workload');
     }
     
     render() {

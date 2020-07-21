@@ -62,16 +62,16 @@ class classPage extends React.Component {
               </div>
 
               <div class="col-2">
-                <div class="circle difficulty-circle">{this.state.overallScore}</div>
+                <div class="circle score-circle difficulty-circle">{this.state.overallScore}</div>
                 <h6 class="score-label">Difficulty</h6>
-                <div class="circle workload-circle">{this.state.workloadScore}</div>
+                <div class="circle score-circle workload-circle">{this.state.workloadScore}</div>
                 <h6 class="score-label">Workload</h6>
               </div>
 
               <div class="col-2">
-                <div class="circle usefulness-circle">{this.state.usefulnessScore}</div>
+                <div class="circle score-circle usefulness-circle">{this.state.usefulnessScore}</div>
                 <h6 class="score-label">Usefulness</h6>
-                <div class="circle interesting-circle">{this.state.interestingScore}</div>
+                <div class="circle score-circle interesting-circle">{this.state.interestingScore}</div>
                 <h6 class="score-label">Interesting</h6>
               </div>
 

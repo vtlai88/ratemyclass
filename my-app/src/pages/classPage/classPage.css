@@ -50,6 +50,15 @@
   padding-bottom: 24%;
 }
 
+.score-circle {
+  width: 75px;
+  height: 75px;
+
+  margin-right: 20px;
+
+  font-size: 24px;
+}
+
 .circle {
   border-radius: 50%;
   display: flex;
@@ -74,38 +83,18 @@
 }
 
 .difficulty-circle {
-  width: 75px;
-  height: 75px;
-
-  font-size: 24px;
-
   background: #E1E1E1;
 }
 
 .usefulness-circle {
-  width: 75px;
-  height: 75px;
-
-  font-size: 24px;
-
   background: #B4F46E;
 }
 
 .workload-circle {
-  width: 75px;
-  height: 75px;
-
-  font-size: 24px;
-
   background: #E1E1E1;
 }
 
 .interesting-circle {
-  width: 75px;
-  height: 75px;
-
-  font-size: 24px;
-
   background: #B4F46E;
 }
 

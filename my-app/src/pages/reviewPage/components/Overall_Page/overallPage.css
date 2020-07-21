@@ -1,0 +1,42 @@
+.overall-label {
+    margin-left: 24%
+} 
+
+#form-section{
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* padding-left: 3%;  */
+    /* margin: auto; */
+    color: #262626;
+}
+
+.textbook-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.attendence-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.professor-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.scale-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.experience-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#class-actions{
+    margin-top: 5%;
+}
+

@@ -32,7 +32,7 @@ class Home extends Component {
   handleSubmit(event) {
     alert('College submitted: ' + this.state.college);
     event.preventDefault();
-    this.props.history.push('/classPage');
+    this.props.history.push('/schoolPage');
   }
 
   render() {

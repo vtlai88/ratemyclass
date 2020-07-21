@@ -6,6 +6,7 @@ import School_Box from './components/School_Box/School_Box';
 import Course_Summary from './components/Course_Summary/Course_Summary';
 import Review_List from './components/Review_List/Review_List';
 import Review from './components/Review/Review';
+import { withRouter } from 'react-router-dom';
 
 class classPage extends React.Component {
   constructor(props) {
@@ -19,13 +20,12 @@ class classPage extends React.Component {
       workloadScore: 4.2,
       interestingScore: 4.3,
     };
-
-    this.handleReviewClick = this.handleReviewClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  //For Valentina review form
-  handleReviewClick() {
-
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.history.push('/schoolPage/classPage/overall');
   }
 
   render() {
@@ -62,16 +62,16 @@ class classPage extends React.Component {
               </div>
 
               <div class="col-2">
-                <div class="circle difficulty-circle">{this.state.overallScore}</div>
+                <div class="circle score-circle difficulty-circle">{this.state.overallScore}</div>
                 <h6 class="score-label">Difficulty</h6>
-                <div class="circle workload-circle">{this.state.workloadScore}</div>
+                <div class="circle score-circle workload-circle">{this.state.workloadScore}</div>
                 <h6 class="score-label">Workload</h6>
               </div>
 
               <div class="col-2">
-                <div class="circle usefulness-circle">{this.state.usefulnessScore}</div>
+                <div class="circle score-circle usefulness-circle">{this.state.usefulnessScore}</div>
                 <h6 class="score-label">Usefulness</h6>
-                <div class="circle interesting-circle">{this.state.interestingScore}</div>
+                <div class="circle score-circle interesting-circle">{this.state.interestingScore}</div>
                 <h6 class="score-label">Interesting</h6>
               </div>
 
@@ -131,7 +131,7 @@ class classPage extends React.Component {
                 <button type="button" class="btn btn-light btn-lg btn-block shadow-sm fav-button"><i class="far fa-heart"></i> Add to Favorites</button>
               </div>
               <div class="col-lg-6 col-sm-12">
-                <button type="button" onClick={this.handleReviewClick} class="btn btn-outline-dark btn-lg btn-block shadow review-button"><i class="fas fa-plus"></i> Review this Class</button>
+                <button type="button" onClick={this.handleSubmit} class="btn btn-outline-dark btn-lg btn-block shadow review-button"><i class="fas fa-plus"></i> Review this Class</button>
               </div>
             </div>
 
@@ -146,4 +146,5 @@ class classPage extends React.Component {
 
 };
 
-export default classPage;
+
+export default withRouter(classPage);

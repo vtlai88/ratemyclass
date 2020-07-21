@@ -2,9 +2,7 @@ import React from "react";
 
 import './schoolPage.css';
 import ucla from '../schoolPhotos/ucla.jpeg';
-import { Container, Row, Col } from 'reactstrap';
 import CourseButton from './courseButton';
-import ScoreCircle from '../classPage/components/ScoreCircle/ScoreCircle'
 
 function schoolPage(){
     return (

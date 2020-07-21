@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { withRouter } from 'react-router-dom';
 import './courseButton.css';
 
 class CourseButton extends React.Component {
@@ -11,15 +11,20 @@ class CourseButton extends React.Component {
       department_code: 'THTR 12',
       full_course_name: 'Introduction to Performance',
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.history.push('/schoolPage/classPage');
   }
 
   render() {
     return (
       <div>
-          <div class="card mb-3" style={{width: '540px'}} href="#" class="btn btn-light">
+          <div class="card mb-3" style={{width: '540px'}} href="#" class="btn btn-light" onClick={this.handleSubmit}>
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                        <div class="circle score-circle">5.2</div>
+                        <div class="circle score-circ">5.2</div>
                         </div>
                         <div class="col-md-8">
                             
@@ -49,4 +54,4 @@ class CourseButton extends React.Component {
   }
 }
 
-export default CourseButton;
+export default withRouter(CourseButton);

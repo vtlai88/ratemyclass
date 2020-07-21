@@ -3,6 +3,8 @@
   padding-top: 1.875rem;
 }
 
+/* Vote Buttons */
+
 .review .up-vote-button {
   position: absolute;
   width: 95.04px;
@@ -23,6 +25,68 @@
   border-radius: 2rem;
 }
 
+/* Score Circles */
+
+.circle {
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+
+.overall-score-circle {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 58px;
+  top: 56px;
+
+  font-size: 56px;
+
+  background: #B4F46E;
+}
+
+.class-difficulty-score-circle {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 315px;
+  top: 251px;
+
+  font-size: 22px;
+
+  background: #E1E1E1;
+}
+
+.usefulness-score-circle {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 565px;
+  top: 251px;
+
+  font-size: 22px;
+
+  background: #B4F46E;
+}
+
+.interesting-score-circle {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 775px;
+  top: 251px;
+
+  font-size: 22px;
+
+  background: #B4F46E;
+}
+
+/* Review Text: Labels, Date, Review */
+
 .review .overall-score-label {
   position: absolute;
   width: 174px;
@@ -32,7 +96,7 @@
 
   font-family: 'Muli', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   display: flex;
@@ -68,8 +132,7 @@
   top: 5.25rem;
 
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 18px;
   line-height: 165.18%;
   /* or 30px */
@@ -106,7 +169,7 @@
 
   font-family: 'Muli', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 20px;
   line-height: 25px;
   display: flex;
@@ -115,7 +178,7 @@
   color: #454545;
 }
 
-.review .usefullness-label {
+.review .usefulness-label {
   position: absolute;
   width: 160px;
   height: 17px;
@@ -137,7 +200,7 @@
   position: absolute;
   width: 160px;
   height: 17px;
-  left: 56.25rem;
+  left: 53.25rem;
   top: 16.9375rem;
 
   font-family: 'Muli', sans-serif;

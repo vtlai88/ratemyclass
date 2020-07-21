@@ -16,18 +16,35 @@ class CourseButton extends React.Component {
   render() {
     return (
       <div>
+          <div class="card mb-3" style={{width: '540px'}} href="#" class="btn btn-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <div class="circle score-circle">5.2</div>
+                        </div>
+                        <div class="col-md-8">
+                            
+                        <div class="card-body">
+                        
+                        <section id="course-summary">
+                            
+
+                            <h5 class="department-code">{this.state.department_code}</h5>
+                            <h2 class="full-course-name">{this.state.full_course_name}</h2>
+
+                            {/* <i class="far fa-heart empty-heart"></i> */}
+
+                            </section>
+
+                        </div>
+                        </div>
+                    </div>
+                    </div>
 
         {/* Course Button Section */}
-        <section id="course-summary">
-
-          <h5 class="department-code">{this.state.department_code}</h5>
-          <h2 class="full-course-name">{this.state.full_course_name}</h2>
-
-          {/* <i class="far fa-heart empty-heart"></i> */}
-
-        </section>
+        
 
       </div>
+    
     );
   }
 }

@@ -2,11 +2,11 @@
     padding: 1% 10%;
   }
 
-  .department-code {
-    font-weight: 600;
-    line-height: 35px;
-  
-    color: #656565;
+  .department {
+    font-weight: 400;
+    line-height: 1px;
+    font-size: 20px;
+    color: #848484;
   }
 /* Scool Summary */
 
@@ -27,4 +27,27 @@
     width: 1440px;
 
   
+}
+/* Score Circles */
+
+.circle {
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+
+.overall-score-circle {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 58px;
+  top: 56px;
+
+  font-size: 56px;
+
+  background: #B4F46E;
 }

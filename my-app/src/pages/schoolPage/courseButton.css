@@ -1,0 +1,28 @@
+/* Course Summary */
+
+#course-summary {
+    margin-top: 1em;
+  }
+  
+  .department-code {
+    font-weight: 400;
+    line-height: 1px;
+    padding-top: 3%;
+    font-size: 20px;
+    color: #848484;
+  }
+  
+  .full-course-name {
+    font-weight: 400;
+    line-height: 60px;
+    display: flex;
+    font-size: 24px;
+    align-items: flex-end;
+  }
+  
+  
+  
+  .empty-heart {
+    font-size: 2rem;
+  }
+  

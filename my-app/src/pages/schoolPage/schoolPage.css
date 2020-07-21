@@ -1,0 +1,30 @@
+.container-fluid {
+    padding: 1% 10%;
+  }
+
+  .department-code {
+    font-weight: 600;
+    line-height: 35px;
+  
+    color: #656565;
+  }
+/* Scool Summary */
+
+#school-summary {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.school-summary-label {
+  padding-top: 2%;
+}
+
+.school-description {
+  padding-top: 1%;
+}
+.school-photo{
+    height: 100x;
+    width: 1440px;
+
+  
+}

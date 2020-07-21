@@ -14,6 +14,7 @@ import Login from './pages/login';
 import SignIn from './pages/signIn';
 import classPage from './pages/classPage/classPage';
 import Review from "./pages/review";
+import schoolPage from "./pages/schoolPage/schoolPage";
 
 
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route exact path="/classPage" component={classPage}/>
           <Route exact path="/review" component={Review}/>
           <Route path="/404" component={NotFoundPage}/>
+          <Route path="/schoolPage" component={schoolPage}/>
           <Redirect to="/404" />
         </Switch>
       </div>

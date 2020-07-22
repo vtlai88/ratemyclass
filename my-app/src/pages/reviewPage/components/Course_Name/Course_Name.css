@@ -1,17 +1,17 @@
-#course-name {
+#class-name {
     margin-top: 4rem;
-    margin-left: 24%;
+
     margin-bottom: 50px;
   }
   
-  .department-code {
+  .dept-code {
     font-weight: 600;
     line-height: 35px;
   
     color: #848484;
   }
   
-  .full-course-name {
+  .course-name {
     font-weight: 600;
     line-height: 60px;
     display: flex;

@@ -18,10 +18,10 @@ class Course_Name extends React.Component {
       <div>
 
         {/* Course Summary Section */}
-        <section id="course-name">
+        <section id="class-name">
 
-          <h5 class="department-code">{this.state.department_code}</h5>
-          <h2 class="full-course-name">{this.state.full_course_name}</h2>
+          <h5 class="dept-code">{this.state.department_code}</h5>
+          <h2 class="course-name">{this.state.full_course_name}</h2>
 
         </section>
 

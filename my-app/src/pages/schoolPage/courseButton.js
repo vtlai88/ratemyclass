@@ -10,6 +10,7 @@ class CourseButton extends React.Component {
       id: 'ucla_thtr12',
       department_code: 'THTR 12',
       full_course_name: 'Introduction to Performance',
+      score: 5.3,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -18,13 +19,14 @@ class CourseButton extends React.Component {
     this.props.history.push('/schoolPage/classPage');
   }
 
+
   render() {
     return (
       <div>
           <div class="card mb-3" style={{width: '540px'}} href="#" class="btn btn-light" onClick={this.handleSubmit}>
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                        <div class="circle score-circ">5.2</div>
+                            <div class="circle score-circ">{this.state.score}</div>
                         </div>
                         <div class="col-md-8">
                             
@@ -43,7 +45,7 @@ class CourseButton extends React.Component {
                         </div>
                         </div>
                     </div>
-                    </div>
+            </div>
 
         {/* Course Button Section */}
         

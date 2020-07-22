@@ -1,3 +1,54 @@
-.review-label {
-    margin-left: 24%
-} 
+.edit-link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    color: #056B71;
+    text-decoration: underline;
+    padding-left: 5%;
+  }
+
+
+.circle-block {
+    border-radius: 50%;
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+.score-circle-review {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 130px;
+    font-size: 50px;
+}
+
+.overall-box{
+    background: #D3F362;
+}
+
+.difficulty-box{
+    background: #E1E1E1;
+}
+
+.workload-box{
+    background: #F0F155;
+}
+
+.useful-box{
+    background: #B4F46E;
+}
+
+.section-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 220px;
+}
+
+

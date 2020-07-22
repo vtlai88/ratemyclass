@@ -30,7 +30,7 @@ class Home extends Component {
   }
 
   handleSubmit(event) {
-    alert('College submitted: ' + this.state.college);
+    // alert('College submitted: ' + this.state.college);
     event.preventDefault();
     this.props.history.push('/schoolPage');
   }
